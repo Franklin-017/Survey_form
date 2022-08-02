@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div id="surveyForm">
+    <div class="title-wrapper">
+      <h1 class="title">Gamer Survey</h1>
+    </div>
+    <div class="survey-form-wrapper">
+      <form action="" class="survey-form">
+
+        <div class="input-wrapper">
+          <label class="form-label " for="name">Name</label>
+          <input type="text" name="name" id="name" autocomplete="off" autofocus />
+        </div>
+
+        <div class="input-wrapper">
+          <label class="form-label" for="email">Email</label>
+          <input type="email" name="email" id="email" autocomplete="off" />
+        </div>
+
+        <div class="input-wrapper">
+          <label class="form-label" for="phoneNumber">Phone Number</label>
+          <input type="number" name="phoneNumber" id="phoneNumber" autocomplete="off" />
+        </div>
+
+        <div class="input-wrapper">
+          <label class="form-label" for="dob">Date Of Birth</label>
+          <input type="date" name="dob" id="dob" />
+        </div>
+
+        <div class="input-wrapper">
+          <label class="form-label" for="gamer_classification">How Would You Classify Yourself as a Gamer?</label>
+          <select name="gamer_classification" id="gamer_classification">
+            <option value="default" selected disabled></option>
+            <option value="theGamingAddict">The Gaming Addict</option>
+            <option value="theSpecialist">The Specialist</option>
+            <option value="theNerd">The Nerd</option>
+            <option value="theElitist">The Elitist</option>
+            <option value="theConstantWhiner">The Constant Whiner</option>
+            <option value="theTrash-talker">The Trash-talker</option>
+          </select>
+        </div>
+
+        <div class="input-wrapper">
+          <div class="form-label">Gender</div>
+          <div class="radio-btn-wrapper">
+            <label for="male" class="radio-label">Male</label>
+            <input type="radio" name="gender" value="male" id="male" />
+          </div>
+          <div class="radio-btn-wrapper">
+            <label for="female" class="radio-label">Female</label>
+            <input type="radio" name="gender" value="female" id="female" />
+          </div>
+          <div class="radio-btn-wrapper">
+            <label for="other" class="radio-label">Other</label>
+            <input type="radio" name="gender" value="other" id="other" />
+          </div>
+        </div>
+        
+        <div class="input-wrapper">
+          <div class="form-label">Which Video Game Genres you play most?</div>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="gener" id="RTS" value="RTS" />
+            <label for="RTS">Real-time strategy</label>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="gener" id="shooting" value="shooting" />
+            <label for="shooting">Shooting</label>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="gener" id="MOBA" value="MOBA" />
+            <label for="MOBA">Multiplayer online battle arena</label>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="gener" id="Role_playing" value="Role_playing" />
+            <label for="Role_playing">Role-playing</label>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="gener" id="action_adventure" value="action_adventure" />
+            <label for="action_adventure">Action-adventure</label>
+          </div>
+        </div>
+
+          <div class="input-wrapper">
+            <label class="form-label" for="games_list">List of Games you played most.</label>
+            <textarea name="game_list" id="games_list" rows="5"></textarea>
+          </div>
+
+          <div class="input-wrapper">
+            <div class="form-label">How much time you spend in a day for games?</div>
+            
+            <div class="radio-wrapper">
+              <input type="radio" name="time_spend" value="lessThenOneHr" id="lessThenOneHr" />
+              <label for="lessThenOneHr"> less then 1 hrs</label> 
+            </div>
+
+            <div class="radio-wrapper">
+              <input type="radio" name="time_spend" value="lessThenThreeHrs" id="lessThenThreeHrs" />
+              <label for="lessThenThreeHrs">less then 3 hrs</label>
+            </div>
+
+            <div class="radio-wrapper">
+              <input type="radio" name="time_spend" value="lessThenSevenHrs" id="lessThenSevenHrs" />
+              <label for="lessThenSevenHrs">less then 7 hrs</label>
+            </div>
+
+            <div class="radio-wrapper">
+              <input type="radio" name="time_spend" value="lessThenTenHrs" id="lessThenTenHrs" />
+              <label for="lessThenTenHrs">less then 10 hrs</label>
+            </div>
+
+            <div class="radio-wrapper">
+              <input type="radio" name="time_spend" value="moreThenTenHrs" id="moreThenTenHrs" />
+              <label for="moreThenTenHrs">more then 10 hrs</label>
+            </div>
+
+          </div>
+
+          <div class="input-wrapper">
+            <div class="form-label">which device you used to play video games?</div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="devices_used" id="pc" />
+              <label for="pc">Personal Computer</label>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="devices_used" id="gaming_console" />
+              <label for="gaming_console">Gaming Console</label>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="devices_used" id="laptop" />
+              <label for="laptop">Laptop</label>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="devices_used" id="tablet" />
+              <label for="tablet">Tablet</label>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="devices_used" id="mobile" />
+              <label for="mobile">Mobile</label>
+            </div>
+
+          </div>
+
+          <div class="input-wrapper">
+            <input type="submit" name="submit" id="submit-btn" value="Submit" />
+          </div>
+      </form>
+    </div>
+  </div>
+  <script src="./app.js" type="application/javascript"></script>
+</body>
+
+</html>

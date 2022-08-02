@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: whitesmoke;
+  --title-font-size: 1.5em;
+  --primary-font-size: 0.9em;
+  --accent-color: rgb(20, 92, 249);
+  --poppins-font-family: 'Poppins', sans-serif;
+  --tablet-primary-font-size: 0.7em;
+  --tablet-title-font-size: 1.3em;
+}
+
+/* Remove number increment and decrement arrow in number input  */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Customize scroll bar  */
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+}
+
+
+body {
+  background-image: url("./assets/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--primary-text-color);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding-block: 20px;
+  user-select: none;
+  font-family: var(--poppins-font-family);
+}
+
+body:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(56, 56, 56, 0.774);
+  z-index: -1;
+}
+
+#surveyForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title-wrapper {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.title {
+  font-size: var(--title-font-size);
+}
+
+.survey-form-wrapper {
+  width: 40vw;
+  height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  background-color: rgba(56, 56, 56, 0.758);
+  box-shadow: 1px 2px 14px var(--accent-color);
+  border-radius: 8px;
+}
+
+.survey-form {
+  width: 100%;
+  height: 100%;
+  font-size: var(--primary-font-size);
+  padding-inline: 25px;
+}
+
+.form-label {
+  color: var(--accent-color);
+}
+
+.mandatory {
+  color: rgb(252, 125, 125);
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  margin-block: 10px;
+  line-height: 24px;
+  transition: 0.5s all ease-in;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='date'],
+input[type='range'],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  outline: none;
+  color: var(--accent-color);
+  resize: none;
+}
+
+input[type='submit'] {
+  background-color: var(--accent-color);
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  color: var(--primary-text-color);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.radio-btn-wrapper,
+.checkbox-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row-reverse;
+  row-gap: 20px;
+  column-gap: 10px;
+  width: 100%;
+}
+
+.radio-btn-wrapper input,
+.radio-btn-wrapper label,
+.checkbox-wrapper input,
+.checkbox-wrapper label {
+  cursor: pointer;
+}
+
+.checkbox-wrapper {
+  flex-direction: row;
+}
+
+.error-field {
+  border-color: rgb(248, 25, 25) !important;
+}
+
+
+@media screen and (max-width: 860px) {
+
+  .survey-form-wrapper {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: var(--tablet-primary-font-size);
+  }
+
+  .title {
+    font-size: var(--tablet-title-font-size);
+  } 
+}
+
+@media screen and (max-width: 425px) {
+  .survey-form-wrapper {
+    width: 80vw;
+  } 
+}
