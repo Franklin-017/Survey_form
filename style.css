@@ -99,6 +99,7 @@ body:after {
   background-color: rgba(56, 56, 56, 0.758);
   box-shadow: 1px 2px 14px var(--accent-color);
   border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .survey-form {
