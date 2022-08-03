@@ -93,7 +93,7 @@ body:after {
 
 .survey-form-wrapper {
   width: 40vw;
-  height: 90vh;
+  height: 85vh;
   overflow-y: auto;
   display: flex;
   background-color: rgba(56, 56, 56, 0.758);
